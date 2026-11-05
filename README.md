@@ -135,7 +135,7 @@ Halaman lain tidak perlu dibuka satu per satu karena bisa diakses lewat menu nav
 |---|---|---|
 | `rina@gmail.com` | `rina123` | User |
 | `agus@gmail.com` | `agus123` | User |
-| `siti@gmail.com` | `siti123` | Admin |
+| `firza@gmail.com` | `123456` | Admin |
 
 **Nomor Delivery Order untuk Tracking**
 
