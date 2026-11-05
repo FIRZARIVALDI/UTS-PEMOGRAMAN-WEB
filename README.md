@@ -12,7 +12,7 @@ Aplikasi web sederhana untuk pemesanan buku pada sebuah toko online. Proyek ini 
 | **NIM** | _312510082_ |
 | **Kelas / Mata Kuliah** | _TI 25 1 A_ / Pemrograman Web 1 |
 | **Dosen Pengampu** | _Agung Nugroho, S.Kom., M.Kom.,_ |
-| **Video Penjelasan** | _[tempel tautan video (maks. 15 menit)](https://www.youtube.com/watch?v=Hoaq7-Ne9lo)_ |
+| **Video Penjelasan** | _[KLIK DISINI TAUTAN VIDIO YT ](https://www.youtube.com/watch?v=Hoaq7-Ne9lo)_ |
 
 ---
 
