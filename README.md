@@ -293,8 +293,6 @@ Setiap tangkapan layar berikut disertai penjelasan tentang apa yang ditampilkan 
 
 ---
 
-> **Cara mengambil tangkapan layar:** jalankan aplikasi dengan Live Server, lalu tekan `Win + Shift + S` (Windows) atau `Cmd + Shift + 4` (Mac). Simpan hasilnya di folder `screenshots/` dengan nama file persis seperti pada daftar di atas supaya gambar tampil di GitHub.
 
----
 
 <p align="center">Dibuat untuk Tugas UTS Pemrograman Web 1 · 2026</p>
