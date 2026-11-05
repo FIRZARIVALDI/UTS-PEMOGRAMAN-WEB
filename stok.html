@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informasi Stok | BukuKu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="stok">
+  <header class="topbar"><div class="container">
+    <a class="brand" href="dashboard.html">Buku<span>Ku</span></a>
+    <nav aria-label="Navigasi utama"><ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="stok.html" class="aktif">Katalog</a></li>
+      <li><a href="checkout.html">Pemesanan</a></li>
+      <li><a href="tracking.html">Tracking</a></li>
+      <li><button id="btnLogout" type="button">Keluar</button></li>
+    </ul></nav>
+  </div></header>
+  <main class="container">
+    <div class="judul-halaman"><h1>📚 Katalog &amp; Stok Buku</h1><p id="jumlahBuku"></p></div>
+    <section class="card" aria-labelledby="hTambah" style="margin-bottom:22px">
+      <h2 id="hTambah" style="margin-bottom:14px">➕ Tambah stok baru</h2>
+      <form id="formStok" novalidate>
+        <div class="baris-form">
+          <div class="field"><label for="sKode">Kode</label><input id="sKode" placeholder="BK-009"><span class="err"></span></div>
+          <div class="field"><label for="sJudul">Judul buku</label><input id="sJudul"><span class="err"></span></div>
+          <div class="field"><label for="sKategori">Kategori</label>
+            <select id="sKategori"><option value="">-- Pilih --</option><option>Teknologi</option><option>Desain</option><option>Novel</option><option>Bisnis</option><option>Sains</option></select>
+            <span class="err"></span></div>
+          <div class="field"><label for="sHarga">Harga (Rp)</label><input id="sHarga" type="number" min="1"><span class="err"></span></div>
+          <div class="field"><label for="sStok">Stok</label><input id="sStok" type="number" min="0"><span class="err"></span></div>
+        </div>
+        <button class="btn" type="submit">Tambah ke katalog</button>
+        <button class="btn sekunder" id="btnReset" type="button">Reset data awal</button>
+      </form>
+    </section>
+    <section class="card" aria-label="Daftar buku">
+      <div class="toolbar"><input id="cariBuku" type="search" placeholder="🔍 Cari judul, kategori, atau kode..." aria-label="Cari buku"></div>
+      <div class="tabel-wrap"><table>
+        <thead><tr><th>Sampul</th><th>Kode</th><th>Judul</th><th>Kategori</th><th>Harga</th><th>Stok</th><th>Aksi</th></tr></thead>
+        <tbody id="tbodyStok"></tbody>
+      </table></div>
+    </section>
+  </main>
+  <footer>&copy; 2026 BukuKu &ndash; Tugas UTS Pemrograman Web 1</footer>
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

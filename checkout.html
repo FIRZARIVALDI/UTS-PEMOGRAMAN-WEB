@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemesanan | BukuKu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="checkout">
+  <header class="topbar"><div class="container">
+    <a class="brand" href="dashboard.html">Buku<span>Ku</span></a>
+    <nav aria-label="Navigasi utama"><ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="stok.html">Katalog</a></li>
+      <li><a href="checkout.html" class="aktif">Pemesanan</a></li>
+      <li><a href="tracking.html">Tracking</a></li>
+      <li><button id="btnLogout" type="button">Keluar</button></li>
+    </ul></nav>
+  </div></header>
+  <main class="container">
+    <div class="judul-halaman"><h1>🛒 Pemesanan Buku</h1><p>Susun keranjang, lengkapi data pemesan, lalu bayar.</p></div>
+    <div class="grid-2">
+      <section class="card" aria-labelledby="hKeranjang">
+        <h2 id="hKeranjang" style="margin-bottom:14px">Keranjang</h2>
+        <div class="baris-form" style="grid-template-columns:2fr 1fr auto;align-items:start">
+          <div class="field"><label for="pilihBuku">Buku</label><select id="pilihBuku"></select><span class="err"></span></div>
+          <div class="field"><label for="qtyBuku">Jumlah</label><input id="qtyBuku" type="number" min="1" value="1"><span class="err"></span></div>
+          <div class="field"><label>&nbsp;</label><button class="btn" id="btnTambah" type="button">Tambah</button></div>
+        </div>
+        <div class="tabel-wrap"><table>
+          <thead><tr><th>Buku</th><th>Harga</th><th>Jml</th><th>Subtotal</th><th></th></tr></thead>
+          <tbody id="tbodyKeranjang"></tbody>
+        </table></div>
+        <div class="total-box">
+          <div><span>Subtotal</span><span id="subtotal">Rp 0</span></div>
+          <div><span>Ongkos kirim</span><span id="ongkir">Rp 0</span></div>
+          <div class="grand"><span>Total bayar</span><span id="grand">Rp 0</span></div>
+        </div>
+      </section>
+      <section class="card" aria-labelledby="hPemesan">
+        <h2 id="hPemesan" style="margin-bottom:14px">Data pemesan &amp; pembayaran</h2>
+        <form id="formPesan" novalidate>
+          <div class="field"><label for="nama">Nama pemesan</label><input id="nama"><span class="err"></span></div>
+          <div class="baris-form">
+            <div class="field"><label for="emailP">Email</label><input id="emailP" type="email"><span class="err"></span></div>
+            <div class="field"><label for="telp">No. HP</label><input id="telp" type="tel" placeholder="081234567890"><span class="err"></span></div>
+          </div>
+          <div class="field"><label for="alamat">Alamat pengiriman</label><textarea id="alamat" rows="2"></textarea><span class="err"></span></div>
+          <div class="baris-form">
+            <div class="field"><label for="ekspedisi">Ekspedisi</label>
+              <select id="ekspedisi"><option value="">-- Pilih --</option><option>JNE</option><option>J&amp;T</option><option>SiCepat</option><option>AnterAja</option></select>
+              <span class="err"></span></div>
+            <div class="field"><label for="paket">Jenis paket</label>
+              <select id="paket"><option value="">-- Pilih --</option><option>Reguler</option><option>Express</option><option>Same Day</option></select>
+              <span class="err"></span></div>
+          </div>
+          <div class="field"><label for="metode">Metode pembayaran</label>
+            <select id="metode"><option value="">-- Pilih --</option><option>Transfer Bank</option><option>E-Wallet</option><option>COD</option></select>
+            <span class="err"></span></div>
+          <button class="btn" type="submit" style="width:100%">Pesan sekarang</button>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer>&copy; 2026 BukuKu &ndash; Tugas UTS Pemrograman Web 1</footer>
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

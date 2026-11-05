@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | BukuKu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login">
+  <main class="login-wrap">
+    <section class="login-hero">
+      <div class="brand">Buku<span>Ku</span></div>
+      <div>
+        <span class="label-kecil">📚 Toko Buku Online untuk Mahasiswa</span>
+        <h1>Baca lebih banyak,<br><span class="gradasi">bayar lebih mudah.</span></h1>
+        <p>Cek stok, susun keranjang, dan lacak kiriman bukumu dalam satu tempat yang rapi dan cepat.</p>
+        <div class="chips">
+          <span class="chip">📖 Katalog lengkap</span>
+          <span class="chip">🛒 Pesan mudah</span>
+          <span class="chip">🚚 Lacak kiriman</span>
+        </div>
+      </div>
+      <div class="tumpukan" aria-hidden="true">
+        <div class="cover c1"><b>Pemrograman Web</b><small>Teknologi</small></div>
+        <div class="cover c2"><b>Laskar Pelangi</b><small>Novel</small></div>
+        <div class="cover c3"><b>Ekonomi Digital</b><small>Bisnis</small></div>
+      </div>
+    </section>
+    <section class="login-form">
+      <div class="card">
+        <h2>Selamat datang 👋</h2>
+        <p class="sub">Masuk untuk mulai berbelanja buku.</p>
+        <form id="formLogin" novalidate>
+          <div class="field"><label for="email">Email</label><input id="email" type="email" autocomplete="username" placeholder="nama@email.com"><span class="err"></span></div>
+          <div class="field"><label for="password">Password</label><input id="password" type="password" autocomplete="current-password" placeholder="••••••"><span class="err"></span></div>
+          <button class="btn" type="submit" style="width:100%">Login</button>
+        </form>
+        <div class="aksi-bawah">
+          <button class="btn sekunder" id="btnLupa" type="button">Lupa Password</button>
+          <button class="btn sekunder" id="btnDaftar" type="button">Daftar</button>
+        </div>
+        <p class="hint">Akun demo: mahasiswa@email.com / 123456</p>
+      </div>
+    </section>
+  </main>
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | BukuKu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dashboard">
+  <header class="topbar"><div class="container">
+    <a class="brand" href="dashboard.html">Buku<span>Ku</span></a>
+    <nav aria-label="Navigasi utama"><ul>
+      <li><a href="dashboard.html" class="aktif">Dashboard</a></li>
+      <li><a href="stok.html">Katalog</a></li>
+      <li><a href="checkout.html">Pemesanan</a></li>
+      <li><a href="tracking.html">Tracking</a></li>
+      <li><button id="btnLogout" type="button">Keluar</button></li>
+    </ul></nav>
+  </div></header>
+  <main class="container">
+    <section class="greeting">
+      <div>
+        <span class="label-kecil">✨ Dashboard</span>
+        <h1 id="greeting">Selamat datang</h1>
+        <p id="tanggal"></p>
+        <p style="margin-top:18px"><a class="btn" href="checkout.html">🛒 Buat pemesanan baru</a></p>
+      </div>
+      <div class="tumpukan mini" aria-hidden="true">
+        <div class="cover c1"><b>Web</b></div>
+        <div class="cover c2"><b>Novel</b></div>
+        <div class="cover c3"><b>Bisnis</b></div>
+      </div>
+    </section>
+    <h2 class="sub-judul">Menu utama</h2>
+    <section aria-label="Menu utama" class="menu-grid">
+      <a class="menu-item" href="stok.html"><span class="ikon">📚</span><strong>Informasi Stok / Katalog</strong><small>Lihat dan tambah stok buku</small></a>
+      <a class="menu-item" href="tracking.html"><span class="ikon">🚚</span><strong>Tracking Pengiriman</strong><small>Lacak dengan nomor DO</small></a>
+      <button class="menu-item" id="btnLaporan" type="button"><span class="ikon">📊</span><strong>Laporan Pemesanan</strong><small>Ringkasan pesanan per status</small></button>
+      <button class="menu-item" id="btnHistory" type="button"><span class="ikon">🧾</span><strong>History Transaksi</strong><small>Semua transaksi tercatat</small></button>
+    </section>
+  </main>
+  <footer>&copy; 2026 BukuKu &ndash; Tugas UTS Pemrograman Web 1</footer>
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

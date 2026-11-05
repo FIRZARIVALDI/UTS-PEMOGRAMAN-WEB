@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tracking Pengiriman | BukuKu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="tracking">
+  <header class="topbar"><div class="container">
+    <a class="brand" href="dashboard.html">Buku<span>Ku</span></a>
+    <nav aria-label="Navigasi utama"><ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="stok.html">Katalog</a></li>
+      <li><a href="checkout.html">Pemesanan</a></li>
+      <li><a href="tracking.html" class="aktif">Tracking</a></li>
+      <li><button id="btnLogout" type="button">Keluar</button></li>
+    </ul></nav>
+  </div></header>
+  <main class="container">
+    <div class="judul-halaman"><h1>🚚 Lacak Pengiriman</h1><p>Masukkan nomor Delivery Order, contoh: DO-2026-0002</p></div>
+    <section class="card">
+      <form id="formCari" class="cari" novalidate>
+        <div class="field" style="flex:1;margin:0"><label for="noDO">Nomor Delivery Order</label><input id="noDO" placeholder="DO-2026-0001"><span class="err"></span></div>
+        <div style="align-self:start;margin-top:26px"><button class="btn" type="submit">Cari</button></div>
+      </form>
+    </section>
+    <div id="hasil" class="hasil" aria-live="polite"></div>
+  </main>
+  <footer>&copy; 2026 BukuKu &ndash; Tugas UTS Pemrograman Web 1</footer>
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
